@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-const Registro = () => {
+const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aquí puedes agregar la lógica para enviar los datos del formulario al servidor
+        // Aquí puedes agregar la lógica para autenticar al usuario
     };
 
     return (
         <div className="container mt-4 border rounded p-4 col-4 shadow-lg">
-            <h2>Registro</h2>
+            <h2>Iniciar Sesión</h2>
             <form onSubmit={handleSubmit} className="mt-4">
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">
@@ -42,7 +41,7 @@ const Registro = () => {
                 </div>
                 <div className="text-center mt-4">
                     <button type="submit" className="btn btn-primary">
-                        Registrarse
+                        Iniciar Sesión
                     </button>
                 </div>
             </form>
@@ -50,4 +49,4 @@ const Registro = () => {
     );
 };
 
-export default Registro;
+export default Login;

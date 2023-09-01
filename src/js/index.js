@@ -13,6 +13,7 @@ import "../styles/index.css";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
 import Registro from "./component/Registro";
+import Login from "./component/Login";
 //render your react application
 ReactDOM.render(
   <UserProvider>
@@ -22,6 +23,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/registro" element={<Registro />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
     </Router>
