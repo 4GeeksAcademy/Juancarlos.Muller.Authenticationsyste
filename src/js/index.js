@@ -21,9 +21,9 @@ ReactDOM.render(
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Login />} />
           <Route path="/registro" element={<Registro />} />
-          <Route path="/login" element={<Login />} />
+
         </Routes>
       </div>
     </Router>
