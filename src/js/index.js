@@ -12,25 +12,19 @@ import "../styles/index.css";
 
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
-import CharacterDetail from "./component/CharacterDetail";
-import PlanetDetail from "./component/PlanetDetail";
-import Footer from "./component/Footer";
 import Registro from "./component/Registro";
 //render your react application
-ReactDOM.render(<>
+ReactDOM.render(
   <UserProvider>
-    <Navbar />
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detail_character/:characterId" element={<CharacterDetail />} />
-        <Route path="/detail_planet/:planetId" element={<PlanetDetail />} />
-        <Route path="/registro" element={<Registro />} />
-
-      </Routes>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/registro" element={<Registro />} />
+        </Routes>
+      </div>
     </Router>
-    <Footer />
-  </UserProvider>
-</>,
+  </UserProvider>,
   document.querySelector('#app')
 );
